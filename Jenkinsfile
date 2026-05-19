@@ -3,7 +3,7 @@ pipeline {
     environment {
         PATH ="/opt/maven/bin:$PATH"
     }
-    Stages{
+    stages{
         stage('biuld'){
             steps{
                 sh 'mvn clean install'
